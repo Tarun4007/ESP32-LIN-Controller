@@ -1,6 +1,4 @@
-# ESP32-LIN-Controller-RGB LED
-
-# ESP32 LIN Controller for RGB LED Drivers
+# ESP32-LIN-Controller-LIN-RGB LED
 
 This project enables communication with LIN LED drivers over the LIN (Local Interconnect Network) protocol using an ESP32 and the MCP2003 LIN transceiver.
 

@@ -15,7 +15,7 @@ This project enables communication with LIN LED drivers over the LIN (Local Inte
 
 - ESP32 Dev Board
 - MCP2003 (LIN Transceiver, 8-PDIP)
-- LIN LED Driver 
+- LIN LED Driver(Lumissil/Melexis/Elmos) 
 - 12V DC Power Supply
 
 ---
@@ -52,7 +52,7 @@ To request data from a Lumissil slave:
 
 ## 🧪 Example Code Snippets
 
-### Send LIN Frame (No Data)
+### Send LIN Frame (PID ,(DATA(8 Bbits) , checksum(true for Enhanced,False for standard/classic)); 
 
 
-sendLINFrame(0x01, {}, false); // Read response from slave at ID 0x01
+sendLINFrame(0x01, {00,00,00,00,00,00,00,00}, false); // send Lin cmdto node at ID 0x01.
